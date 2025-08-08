@@ -1,0 +1,18 @@
+class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+
+        """
+        l = 0
+        size = len(nums)
+        
+        while l < size:
+            if nums[l] == 0:
+                nums.pop(l)
+                nums.append(0)
+                size -= 1
+            else:
+
+                l += 1
+        
